@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Knewave&family=Londrina+Sketch&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+main{
+    font-family: "Ga Maamli", sans-serif;
+    width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 150px;
+    background-color: #bd6c6cb2;
+    
+}
+body{
+    background-image: url(preview.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header{
+    width: 1280px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+nav{
+    width: 1280px;
+    height: 140px;
+    text-size-adjust: 90px;
+    position: fixed;
+    background-color: #14201b9a;
+    top: 5px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.nombre{
+    width: 1000px;
+    height: 120px;
+}
+nav a img{
+    width: 125px;
+    margin-left: 25px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+#botones{
+    float: none;
+    width: 450px;
+    height: 130px;
+    padding: 10px;
+}
+#botones a{
+    display: inline-block;
+    color: #fcfaf8;
+    font-size: x-large;
+    line-height: 75px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 5px;
+    transition: .5s;
+}
+#bot{
+    width: 130px;
+    height: 80px;
+    padding-bottom: 50px;
+}
+
+#principal{
+    background-image: url(fondito.webp);
+    margin: 10px;
+    padding-top: 5px;
+}
+#principal h2{
+    margin: 10px;
+    color: #fcfaf8;
+    text-align: center;
+}
+#principal img{
+    width: 600px;
+    margin: 10px;
+    margin-left: 35px;
+}
+.container{
+    position: relative;
+}
+.txtimg{
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
+    font-size: 25px;
+    color: #000000;
+}
+#principal article{
+    width: 550px;
+    color: #fcfaf8;
+    margin: 10px;
+    margin-right: 35px;
+    float: right;
+    font-size: 25px;
+}
+#secundario{
+    width: 400px;
+    background-color: #0a6c45;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding-top: 5px;
+    display: inline-block;
+}
+#secundario h2{
+    margin: 10px;
+    color: #fcfaf8;
+    text-align: center;
+}
+#secundario img{
+    width: 375px;
+    height: 250px;
+    margin: 10px;
+}
+#secundario article{
+    width: 375px;
+    margin: 10px;
+    font-size: 18px;
+    background-color: #0a6c40;
+    border: 2px solid #000000;
+}
+
+
+p{
+    padding: 10px;
+    color: #fcfaf8;
+    background-color: #1ba66c;
+}
+.montserrat  {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 80px;
+    font-style: normal;
+  }
+
+footer{
+    position: relative;
+    bottom :0px;
+    width: 1280px;
+    height: 200px;
+    background-color: #0a6c45;
+    padding: 5px;
+    padding-bottom: 1px;
+}
+#lin1{
+    display: inline-block;
+    background-color: #fcfaf8;
+    height: 130px;
+    width: 2px;
+    border-radius: 5px;
+}
+#lin2{
+    display: inline-block;
+    background-color: #fcfaf8;
+    height: 130px;
+    width: 2px;
+    border-radius: 5px;
+}
+#conten1{
+    text-align: center;
+    display: inline-block;
+    width: 400px ;
+    height: 150px;
+}
+#conten1 p{
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    font-size: x-large;
+    margin-top: 5px;
+} 
+#conten1 a{
+    font-family: "Montserrat", sans-serif;
+    font-size: large;
+    text-decoration: none;
+    color: #000000;
+    margin-top: 5px;
+}
+#conten1 img{
+    width: 50px;
+}
+
+.slider{
+    transform: scale(0.9);
+    overflow: hidden; 
+    margin: auto;
+}
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+    height: 300px;
+    animation: cambio 10s infinite alternate;
+}
+.slider ul li{
+    list-style: none;
+    width: 100%;
+}
+.slider img{
+    width: 100%;
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;} /*la imagen 1 sale con el -100% y entra la segunda imagen*/
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+                                /*la imagen 2 sale con el -200% y entra la segunda imagen*/
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}        /*la imagen 3 sale con el -300% y entra la segunda imagen*/
+    100%{margin-left: -300%;}
+}
